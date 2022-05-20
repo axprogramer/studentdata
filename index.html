@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Java</title>
+    <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #dddddd;
+        }
+        </style>
+</head>
+<body onload="init()">
+   <div>
+    <h1>Information</h1> <br>
+    <p>Full Name</p>
+    <input type="text" id="fullName"><br>
+    <p>Sex</p>
+    <input type="text" id="sex"><br>
+    <p>Grade</p>
+    <input type="text" id="grade"><br>
+    <button id="show" onclick="bTn()">Submit</button>
+    <button id="update" onclick="update()">Update</button>
+
+    <br>
+   </div>
+<div>
+    <table id="student" contenteditable>
+        <tr>
+          <th>Full Name</th>
+          <th>Sex</th>
+          <th>Grade</th>
+          <th >Edit/Delete</th>
+
+        </tr>
+        <tbody id="part">
+         
+        </tbody>
+      </table>
+</div>
+
+   <div>
+       <iframe src="" frameborder="0" id="video" height="600px" width="720"></iframe>
+   </div>
+
+</body>
+<script src="./input.js"></script>
+</html>
